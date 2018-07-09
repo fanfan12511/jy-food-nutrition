@@ -1,0 +1,37 @@
+<view class='search-box'>
+  <view class='search-top'>
+    <view class='search-top-box'>
+      <icon class="icon-small search-icon" type="search" size="14"></icon>
+      <input class="weui-input search-input" auto-focus placeholder="想查询哪种食物的营养？"/>
+    </view>
+    <view class="search-top-cancel">取消</view>
+  </view>
+  <!-- 搜索记录 -->
+  <view class="search_record">
+    <!-- 搜索关键字 -->
+    <view class='record_cont'>
+      <view class="hot_record record_box">
+        <view class="record_title">{{list[0].name}}</view>
+        <view class="record_list">
+          <block wx:for-items="{{list[0].tags}}" wx:key="{{item.id}}">
+            <view class="record_list_item">{{item}}</view>
+          </block>
+        </view>
+      </view>
+      <view class="history_record record_box">
+        <view class="delete_history iconfont icon-shanchu"></view>
+        <view class="record_title">{{list[1].name}}</view>
+        <view class="record_list">
+          <block wx:for-items="{{list[1].tags}}" wx:key="{{item.id}}">
+            <view class="record_list_item">{{item}}</view>
+          </block>
+        </view>
+      </view>
+    </view>
+    <!-- 搜索结果 -->
+    <view>
+      <view></view>
+    </view>
+
+  </view>
+</view>

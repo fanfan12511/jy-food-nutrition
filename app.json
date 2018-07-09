@@ -1,0 +1,52 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/index/pages/search/search",
+    
+    "pages/logs/logs",
+    "pages/analysis/index",
+    "pages/recipe/index",
+    "pages/share/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color":"#7A7E83",
+    "selectedColor": "#3cc51f",
+    "backgroundColor":"#fff",
+    "list":[{
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_hl.png",
+        "text": "首页"
+      },
+      {
+      "pagePath":"pages/recipe/index",
+      "iconPath":"images/recipe.png",
+      "selectedIconPath":"images/recipe_hl.png",
+      "text":"有料食谱"
+    },{
+      "pagePath": "pages/analysis/index",
+      "iconPath": "images/analysis.png",
+      "selectedIconPath": "images/analysis_hl.png",
+      "text": "饮食分析"
+    },{
+      "pagePath": "pages/share/index",
+      "iconPath": "images/share.png",
+      "selectedIconPath": "images/share_hl.png",
+      "text": "转发分享"
+    }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}
