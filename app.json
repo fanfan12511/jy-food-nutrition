@@ -1,8 +1,11 @@
 {
   "pages":[
+    "pages/index/pages/leaderboard/leaderboard",
+    
     "pages/index/index",
     "pages/index/pages/search/search",
-    
+    "pages/index/pages/details/details",
+
     "pages/logs/logs",
     "pages/analysis/index",
     "pages/recipe/index",

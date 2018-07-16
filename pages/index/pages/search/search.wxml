@@ -1,3 +1,5 @@
+<import src="../../../common/list.wxml" />
+
 <view class='search-box'>
   <view class='search-top'>
     <view class='search-top-box'>
@@ -29,9 +31,25 @@
       </view>
     </view>
     <!-- 搜索结果 -->
-    <view>
-      <view></view>
+    <view class="search_result">
+      <view class="result_filter">
+        <view class="filter_title" bindtap="kindTaggle">营养素排行</view>
+        <view class="iconfont icon-jiantouarrow483 filter_icon"></view>
+      </view>
+      <view class="result_list">
+        <block wx:for-items="{{items}}" wx:key="{{item.id}}">
+          <template is="food-list" data = "{{item}}"></template>
+        </block>
+      </view>
+      <!-- 弹层 -->
+      <view class="filter_mask {{filters[0].open ? 'mask_show' : ''}}">
+        <view class="mask_list">
+          <block wx:for-items="{{filters[0].arrs}}" wx:key="{{item.id}}">
+            <view id = "{{item.id}}" class="mask_item {{item.show ? 'item_on' : ''}}" bindtap="filterTaggle">{{item.name}}</view>
+          </block>
+        </view>
+        <view class="mask_btn">确认</view>
+      </view>
     </view>
-
   </view>
 </view>
