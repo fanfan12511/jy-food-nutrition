@@ -1,0 +1,21 @@
+<template name="food-list">
+  <navigator class="result_item" url="{{item.url}}">
+    <view class="item_img">
+      <image src="{{item.img}}"></image>
+    </view>
+    <view class="item_info">
+      <view class="info_name">{{item.name}}</view>
+
+      <view class="info_cont" wx:if = "{{item.left == 0}}">
+        <view class="info_cont_num">{{item.num}}</view>
+        <view class="info_cont_unit">{{item.unit}}</view>
+      </view>
+      <view class="info_cont" wx:elif = "{{item.left == 1}}">
+        <view class="info_cont_unit">{{item.unit}}</view>
+        <view class="info_cont_num">{{item.num}}</view>
+      </view>
+
+    </view>
+  </navigator>
+  
+</template>

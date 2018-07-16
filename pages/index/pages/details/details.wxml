@@ -1,0 +1,17 @@
+<view>
+  <view class="result_item">
+    <view class="item_img">
+      <image src="../../../../images/img01.jpeg"></image>
+    </view>
+    <view class="item_info">
+      <view class="info_name">西红柿</view>
+      <view class="info_cont"><view class="info_cont_num">196</view>千卡/100克</view>
+    </view>
+  </view>
+
+  <!-- 圆环图 -->
+  <view>
+
+  </view>
+  
+</view>

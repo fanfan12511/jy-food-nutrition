@@ -1,0 +1,33 @@
+.result_list{
+  overflow: hidden;
+}
+.result_item{
+  overflow: hidden;
+  padding: 20rpx;
+  margin: 20rpx 30rpx;
+  background: #eb6100;
+  border-radius: 20rpx;
+  color:#fff;
+}
+.item_img{
+  float: left;
+  padding:0 20rpx;
+}
+.item_img image{
+  display: block;
+  width: 150rpx;
+  height: 150rpx;
+}
+.item_info{
+  float: left
+}
+.info_name{
+  font-size: 35rpx;
+  padding: 10rpx 0 20rpx 0;
+}
+.info_cont{
+  font-size: 35rpx;
+}
+.info_cont_num{
+  float: left;
+}

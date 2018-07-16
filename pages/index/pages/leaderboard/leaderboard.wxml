@@ -1,0 +1,15 @@
+<import src="../../../common/list.wxml" />
+
+<view>
+  <view>
+    <view>
+    
+    </view>
+  </view>
+  
+  <view class="food_list">
+    <block wx:for-items="{{items}}" wx:key="{{item.id}}">
+      <template is="food-list" data = "{{item}}"></template>
+    </block>
+  </view>
+</view>
