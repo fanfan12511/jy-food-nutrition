@@ -1,3 +1,4 @@
+
 <template name="food-list">
   <navigator class="result_item" url="{{item.url}}">
     <view class="item_img">
@@ -17,5 +18,21 @@
 
     </view>
   </navigator>
-  
+</template>
+
+<template name="group-list">
+  <navigator class="index-list-item" url="{{item.url}}">
+    <image src="{{item.img}}" class="item-img"></image>
+    <text class="item-text">{{item.title}}</text>
+  </navigator>
+</template>
+
+<template name="top-search">
+  <view class="index-top">
+    <image src="../../images/food02.jpeg" class="index-top-bg"></image>
+    <navigator class="index-top-search" url='pages/search/search'>
+      <icon class="icon-small search-icon" type="search" size="14"></icon>
+      <input class="weui-input search-input" auto-focus placeholder="{{search}}"/>
+    </navigator>
+  </view>
 </template>

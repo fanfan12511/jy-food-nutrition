@@ -5,7 +5,44 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    search:'输入想吃的美食',
+    list: [{
+      id: '01',
+      title: '破壁料理机',
+      url: '',
+      img: '../../images/img01.jpeg'
+    }, {
+      id: '02',
+      title: '原汁机',
+      url: '',
+      img: '../../images/img05.jpeg'
+    }, {
+      id: '03',
+      title: '面条机',
+      url: '',
+      img: '../../images/img03.jpeg'
+    }, {
+      id: '04',
+      title: '料理机',
+      url: '',
+      img: '../../images/img04.jpeg'
+    }, {
+      id: '05',
+      title: '电烤箱',
+      url: '',
+      img: '../../images/img02.jpeg'
+    }, {
+      id: '06',
+      title: '空气炸锅',
+      url: '',
+      img: '../../images/img01.jpeg'
+    }, {
+      id: '07',
+      title: '煎烤机',
+      url: '',
+      img: '../../images/img01.jpeg'
+    }
+    ]
   },
 
   /**

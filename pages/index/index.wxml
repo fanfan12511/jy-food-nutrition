@@ -1,19 +1,12 @@
 <!--index.wxml-->
+<import src="../common/list.wxml" />
+
 <view>
-  <view class="index-top">
-    <image src="../../images/food02.jpeg" class="index-top-bg"></image>
-    <navigator class="index-top-search" url='pages/search/search'>
-      <icon class="icon-small search-icon" type="search" size="14"></icon>
-      <input class="weui-input search-input" auto-focus placeholder="想查询哪种食物的营养？"/>
-    </navigator>
-  </view>
+  <template is="top-search" data="{{search}}"></template>
   <!-- 首页列表 -->
   <view class="index-list">
     <block wx:for-items="{{list}}" wx:key="{{item.id}}">
-      <navigator class="index-list-item" url="{{item.url}}">
-        <image src="{{item.img}}" class="item-img"></image>
-        <text class="item-text">{{item.title}}</text>
-      </navigator>
+      <template is="group-list" data= "{{item}}"></template>
     </block>
   </view>
 

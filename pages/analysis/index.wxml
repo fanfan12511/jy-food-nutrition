@@ -1,1 +1,48 @@
-<text>饮食分析</text>
+<view>
+  <view class="info_list">
+    <view class="info_list_name">性别</view>
+    <view class="info_list_cont">
+      <label class="radio">
+        <radio value="r1" checked="true" />男
+      </label>
+      <label class="radio">
+        <radio value="r2" />女
+      </label>
+    </view>
+  </view>
+
+  <view class="info_list">
+    <view class="info_list_name">身高</view>
+    <view class="info_list_cont">
+      <view class="list_cont_left">
+        <input class="list_input" type="number" placeholder="请输入身高" />
+      </view>
+      <view class="list_cont_right">厘米</view>
+    </view>
+  </view>
+
+  <view class="info_list">
+    <view class="info_list_name">体重</view>
+    <view class="info_list_cont">
+      <view class="list_cont_left">
+        <input class="list_input" type="number" placeholder="请输入体重" />
+      </view>
+      <view class="list_cont_right">公斤</view>
+    </view>
+  </view>
+
+  <picker mode="date" value="{{date}}" start="1900-01-01" end="2018-09-01" bindchange="bindDateChange">
+    <view class="info_list">  
+      <view class="info_list_name">生日</view>
+      <view class="info_list_cont">
+        <view class="list_cont_left">{{date}}</view>
+        <view class="list_cont_right icon_arrow iconfont icon-jiantouarrow483"></view>
+      </view>
+    </view>
+  </picker>
+  
+  <view class="info_btn">
+    <button type="primary">完成</button>
+  </view>
+
+</view>

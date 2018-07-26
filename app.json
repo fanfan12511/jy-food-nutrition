@@ -1,10 +1,11 @@
 {
   "pages":[
-    "pages/index/pages/leaderboard/leaderboard",
-    
+
     "pages/index/index",
     "pages/index/pages/search/search",
     "pages/index/pages/details/details",
+    "pages/index/pages/leaderboard/leaderboard",
+    "pages/index/pages/element/element",
 
     "pages/logs/logs",
     "pages/analysis/index",

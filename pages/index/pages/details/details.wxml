@@ -10,8 +10,27 @@
   </view>
 
   <!-- 圆环图 -->
-  <view>
-
+  <view class="canvas_main">
+    <!--蛋白质-->
+    <view class="canvas_box">
+      <canvas canvas-id="protein" class="canvas" bindtouchstart="touchHandler"></canvas>
+    </view>
+    <!--脂肪-->
+    <view class="canvas_box">
+      <canvas canvas-id="fat" class="canvas" bindtouchstart="touchHandler"></canvas>
+    </view>
+    <!--碳水化合物-->
+    <view class="canvas_box">
+      <canvas canvas-id="carbohydrate" class="canvas" bindtouchstart="touchHandler"></canvas>
+    </view>
+    
+    <!--更多营养素-->
+    <navigator class="more_nutrition" url="../../pages/element/element">更多营养素</navigator>
   </view>
-  
+
+  <!--底部按钮-->
+  <view class="foot_nutrition">
+    <navigator class="foot_btn">主页</navigator>
+    <view class="foot_btn foot_btn_right">转发</view>
+  </view>
 </view>

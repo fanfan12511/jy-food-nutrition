@@ -12,7 +12,7 @@ Page({
         unit: 'g/100g',
         left: '0',
         img: '../../../../images/img01.jpeg',
-        url: ''
+        url: '../../pages/details/details'
       },
       {
         id: '西红柿',
@@ -21,7 +21,7 @@ Page({
         unit: 'GI值:',
         left: '1',
         img: '../../../../images/img01.jpeg',
-        url: ''
+        url: '../../pages/details/details'
       }, {
         id: '西红柿',
         name: '西红柿',
@@ -29,7 +29,7 @@ Page({
         unit: 'GI值:',
         left: '1',
         img: '../../../../images/img01.jpeg',
-        url: ''
+        url: '../../pages/details/details'
       },
     ]
   },

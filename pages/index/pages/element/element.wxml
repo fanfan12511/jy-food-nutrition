@@ -1,0 +1,17 @@
+<view class="element">
+  <!--表格头部-->
+  <view class="ele_top">
+    <view class="ele_item">{{lists[0].name}}</view>
+    <view class="ele_item ele_midd">{{lists[1].name}}</view>
+    <view class="ele_item">{{lists[2].name}}</view>
+  </view>
+
+  <block wx:for-items = "{{items}}" wx:key="{{item.id}}">
+    <view class="ele_table">
+      <view class="ele_item">{{item.name}}</view>
+      <view class="ele_item ele_midd">{{item.num}} {{item.unit}}</view>
+      <view class="ele_item">{{item.percentage}}%</view>
+    </view>
+  </block>
+
+</view>

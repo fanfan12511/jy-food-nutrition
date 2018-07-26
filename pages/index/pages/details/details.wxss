@@ -31,3 +31,34 @@
 .info_cont_num{
   float: left;
 }
+.canvas_box{
+  width: 28%;
+  float: left;
+  margin: 10rpx 2.5%;
+}
+.canvas_main{
+  overflow: hidden;
+  margin-left: -20rpx;
+}
+.more_nutrition{
+  margin: 20rpx auto;
+  text-align: center;
+}
+.foot_nutrition{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.foot_btn{
+  float: left;
+  width: 49.8%;
+  height: 50rpx;
+  background: #ccc;
+  text-align: center;
+  padding: 20rpx 0;
+  box-sizing: none
+}
+.foot_btn_right{
+  float: right;
+}

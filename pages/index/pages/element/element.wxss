@@ -1,0 +1,24 @@
+.ele_top{
+  background: #f3f3f3;
+  overflow: hidden;
+}
+.ele_item{
+  float: left;
+  width: 25%;
+  font-size: 30rpx;
+  padding: 20rpx 0;
+  text-align: center
+}
+.ele_midd{
+  width: 50%;
+  text-align: center
+}
+.ele_table{
+  width: 100%;
+  overflow: hidden;
+}
+.ele_table .ele_item{
+  border-bottom: 1px solid #f3f3f3;
+  padding: 25rpx 0;
+  color:#333;
+}

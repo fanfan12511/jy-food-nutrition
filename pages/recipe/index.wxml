@@ -1,2 +1,10 @@
 <!--pages/recipe/index.wxml-->
-<text>有料食谱</text>
+<import src="../common/list.wxml" />
+
+<template is="top-search" data="{{search}}"></template>
+<!-- 食谱列表 -->
+<view class="index-list">
+  <block wx:for-items="{{list}}" wx:key="{{item.id}}">
+    <template is="group-list" data= "{{item}}"></template>
+  </block>
+</view>

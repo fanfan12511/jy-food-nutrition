@@ -1,15 +1,15 @@
 <import src="../../../common/list.wxml" />
 
-<view>
-  <view>
-    <view>
-    
-    </view>
+<view class="ranking_box">
+  <view class="ranking_top">
+    <image src="../../../../images/food02.jpeg" class="ranking_img"></image>
+    <view class="ranking_title">高GI-水果类</view>
+    <navigator url="" class="ranking_link">营养科普——食物的GI值</navigator>
   </view>
   
   <view class="food_list">
     <block wx:for-items="{{items}}" wx:key="{{item.id}}">
-      <template is="food-list" data = "{{item}}"></template>
+      <template is="food-list" data="{{item}}"></template>
     </block>
   </view>
 </view>

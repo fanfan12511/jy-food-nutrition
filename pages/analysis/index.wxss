@@ -1,1 +1,39 @@
 /* pages/analysis/index.wxss */
+
+.info_list{
+  overflow: hidden;
+  padding: 20rpx;
+  font-size: 26rpx;
+}
+.info_list_name{
+  float: left;
+  color:#777;
+}
+.info_list_cont{
+  overflow: hidden;
+  float: right;
+  color:#333;
+}
+.list_cont_left{
+  float: left;
+  padding:0 10rpx;
+}
+.list_cont_right{
+  float: right;
+  line-height: 1.4rem;
+}
+.list_input{
+  text-align: right;
+  padding-right: 10rpx;
+}
+.icon_arrow{
+  line-height: 1.2rem;
+}
+.info_btn{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.info_btn button{
+  width: 96%;
+}
